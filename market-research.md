@@ -21,7 +21,8 @@ Should we make this a "real" HTML table for sorting/filtering?
 
 | Product/Service Name | Open/Closed Source | Cost | Pricing Model | API | UX | Keyboard Shortcuts | Automation | Kanban / Drag+Drop | Custom Fields/Data | Custom Workflow |
 | ------------- |:-------------:| ----- | --- |:--- | --- | --- | --- | --- | --- | --- |
-| [hubspot.com](https://www.hubspot.com) | Closed | [$42/user/month](https://www.hubspot.com/pricing/sales) for _first_ user | 3 Tiers: "Free", Starter: $42 for **1 user** & "Professional": $330 for 5 users = **$66/u/m** | REST https://developers.hubspot.com/ | Kanban | [**No**](https://community.hubspot.com/t5/HubSpot-Ideas/keyboard-shortcuts/idi-p/12244) | Yes | Yes | [Yes](https://api.insight.ly/v2.2/Help#!/Overview/Technical_Details) | Yes |
+| [Getbase.com](https://getbase.com) | Closed | [$45/user/month](https://getbase.com/pricing) for _first_ user | 3 Tiers: Starter: $45/u/m, "Professional": $95/u/m & "Enterprise": $145/u/m | REST https://developers.getbase.com | "Traditional" | [Yes](https://support.getbase.com/hc/en-us/articles/204508995-Can-I-use-Keyboard-Shortcuts) | Yes | No | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
+| [Hubspot.com](https://www.hubspot.com) | Closed | [$42/user/month](https://www.hubspot.com/pricing/sales) for _first_ user | 3 Tiers: "Free", Starter: $42 for **1 user** & "Professional": $330 for 5 users = **$66/u/m** | REST https://developers.hubspot.com/ | Kanban | [**No**](https://community.hubspot.com/t5/HubSpot-Ideas/keyboard-shortcuts/idi-p/12244) | Yes | Yes | [Yes](https://api.insight.ly/v2.2/Help#!/Overview/Technical_Details) | Yes |
 | [insightly.com](https://www.insightly.com) | Closed | [$49/user/month](https://www.insightly.com/pricing) | 3 Tiers: "Plus": $29/u/m, Professional: $49/user/month & "Enterprise": $99/u/m | REST https://api.insight.ly/v2.2/Help | Kanban/Outlook Inbox | [Yes](https://support.insight.ly/hc/en-us/articles/204248780-Keyboard-shortcuts) | Yes | Yes | Yes | Yes |
 | [Pipedrive.com](https://www.pipedrive.com) | Closed | [$29/user/month](https://www.pipedrive.com/en-gb/plans) | 3 Tiers: Silver: 15/u/m, Gold: $29/u/m & "Platinum": $75/u/m | REST + Webhooks https://developers.pipedrive.com/docs/api/v1/ | Kanban Board | Yes | Yes | Yes | Yes | Yes |
 | [Salesforce.com](https://www.salesforce.com) | Closed | [$25/user/month](https://www.salesforce.com/editions-pricing/platform) | Variable/Opaque from $25 to $300/u/m! | REST + Stream https://developer.salesforce.com/page/Salesforce_APIs | "Classic" ("Clunky") or "Lightning" (Drag-and-drop) | Yes | Yes | Yes | Yes | Yes |
@@ -34,6 +35,33 @@ Should we make this a "real" HTML table for sorting/filtering?
 > Meta: should this list be Alphabetical or in order of Popularity?
 (_I get the feeling that Alphabetical will make locating an entry easier
 and thus aid maintenance ..._)
+
+## Base CRM
+
+Base CRM is a general purpose CRM system with many advanced features.
+https://getbase.com
+
+![image](https://user-images.githubusercontent.com/194400/40935887-6e08c022-6831-11e8-9129-cb430bff5557.png)
+The UI/UX is a "traditional" CRM and does **not _yet_ have** a "**Kanban**" UX,
+therefore we have excluded it from further research/discussion.
+
+Review of the pricing: https://getbase.com/pricing indicates that all of the
+"advanced" features like "task automation" are
+only available in the "Professional" tier and "Role-based Permissions"
+are only in the "Enterprise"!
+![base-crm-pricing](https://user-images.githubusercontent.com/194400/40936814-8032fdf0-6834-11e8-9ef1-27acf8565b32.png)
+
+The API is good: https://developers.getbase.com
+including a "firehose" which gives a "near real-time stream" of changes. <br />
+![base-crm-firehose-api](https://user-images.githubusercontent.com/194400/40936946-f72dbc4c-6834-11e8-96d0-8826662d7812.png)
+
+Overall Base CRM is _not_ a contender because the UI is "dated"
+and the pricing is comparatively _high_.
+
+
+
+
+
 
 ## HubSpot CRM
 
@@ -61,7 +89,8 @@ The HubSpot CRM system is _deliberately disabled_
 (_the whole point of the "Free CRM" is to up-sell people_)
 
 
-### Satisfices Requirements?
+### Satisfies Requirements?
+
 Full features here: https://www.hubspot.com/products/crm
  and https://knowledge.hubspot.com/getting-started-with-the-hubspot-crm-free/
 + Provides a kanban board style deal pipeline
@@ -77,7 +106,7 @@ or https://automate.io/integration/hubspot/mailchimp
 
 The API in general looks to support the majority of the requirements
 but we didn't dig into the detail level here as the lack of support
-for multiple currencies is likely a deal breaker.
+for multiple currencies is likely a ***deal breaker***.
 
 
 ## Insightly
