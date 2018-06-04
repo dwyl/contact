@@ -1,7 +1,7 @@
 ## Considerations
 
 + Is the **UI/UX _fixed_** or ***customisable***?
-(_can we change it if we don't like it or find the workflow slow/frustrating_?)
+(_can we change it if we don't like it or find the workflow sfrustrating_?)
 + Does the system detect the "presence" of the person updating
 the contact/details to avoid two people attempting to edit simultaneously?
 + Is the **UI/API updated** in **_real-time_**
@@ -20,19 +20,26 @@ on getting sales or does it manage the full "***lifecycle***" including
 reviews/feedback and ***complaints***?
 + **Data protection** - where is the data stored? EU datacenter for EU-based
 customers/contacts or _everything_ in a US-based datacenter?
++ Are **Transaction Processed/Logged** in the system so customer value
+is _visible_ not just "status". This is _essential_ for repeat sales.
 
 ## Requirements
 
 We have distilled the CRM requirements into the following:
 
-+ **Lead management** (_**Kanban**-style board_) to visualise active leads
+1. **Lead management** (_**Kanban**-style board_) to visualise active leads
 and easily "**_drag-and-drop_**" from one stage/phase to the next.
-+ **API** so leads can be piped in direct without having to email the system.
-+ **Email Marketing/Automation** integrated or potentially contactable
+
+2. **API** availability (_preferablly "streaming"_) so leads can be piped
+in directly without having to email or perform manual data entry.
+
+3. **Email Marketing/Automation** integrated or potentially contactable
 via a live API to Email service (_e.g: Mail Chimp_) which we already use
-+ **Data privacy** guarantees ensure data privacy, security & reliability
+
+4. **Data privacy** guarantees ensure data privacy, security & reliability
 (_encryption, backup, access controls & redundancy_) to avoid company liability.
-+ ***GDPR Compliance***: easily see who has given consent for us to store/retain
+
+5. ***GDPR Compliance***: easily see who has given consent for us to store/retain
 their data. If person has _not_ given consent
 (_e.g existing users or "cold" prospects_)
 re-request it by sending them a tracked email
@@ -40,14 +47,15 @@ if they fail to open or click the link to confirm,
 _automatically_ "_expire_" the data
 (`delete` _after a pre-defined period_).
 
-(_we hate non live integrations though when you have to update / refresh
-  the mailing list before sending out every time.
+>_We hate non-realtime systems that require us to manually update / refresh
+  the "mailing list" before sending out every time.
   I'd like to just choose a grouping within a list and send knowing that
   all new subscribers and relevant people are being mailed including
-  the automatic unsubscribes_)
+  the automatic unsubscribes_.
 
-API requirements:
-+ `POST` requests for an enquiry with basic info:
+## API Requirements
+
++ `POST` requests to create/update an enquiry record:
   + contact info (_Name, Location, Phone Number, Email_)
   + product name
   + product link
@@ -56,26 +64,21 @@ API requirements:
   + contact_id
   + **Viewed products** so customer service can see what else
   the person has looked at while browsing the site.
-+ `GET` requests for individual user's record.
-  + **User profile** (name, contact details)
-  + **Enquiry details** (date, yacht name, yacht URL)
++ `GET` requests for:
+  + **User profile** (name, contact details, email/phone verified)
+  + **Enquiry details** (date, product name, product URL)
   + **Enquiry status** (latest updated date, status. e.g: Awaiting first contact,
     In progress, Closed - at the simplest level, but this could
     be made much more detailed and interesting)
-  + **Saved data**
 
-Nice-to-haves:
-+ Logged in users' searches `POST`ed to the CRM
-+ Ability to analyse data across enquiries
-  + If in the CRM we have to send things like partial enquiries or
+### "Nice-to-have"
+
++ Logged in users' searches automatically `POST`ed (_appended_) to the CRM
++ Ability to analyse data across enquiries (_multiple sessions + devices_)
++ If in the CRM we have to send things like partial enquiries or
   saved products as just 'notes' in the contact because
   the CRM doesn't support custom objects for example,
   it'll make it difficult for any real data analysis to be built in
-+ **Partial enquiries** (i.e. someone creates their account but doesn't
-press 'send' on the enquiry after they've seen the summary _or_ someone
-is logged in, presses 'request availability' on the individual yacht page,
-but doesn't press send after they've seen the summary)
-
-A custom CRM would definitely be the best thing for them from a data
-analysis perspective, but the expectation is that an 'off-the-shelf'
-option will also be proposed.
++ **Partial enquiries** e.g: someone starts a search or enquiry but doesn't
+complete it or the person is logged in, presses 'request availability'
+on the individual product page, but then never completes the form.
