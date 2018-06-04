@@ -1,4 +1,4 @@
-## Considerations
+## Considerations
 
 + Is the **UI/UX _fixed_** or ***customisable***?
 (_can we change it if we don't like it or find the workflow sfrustrating_?)
@@ -71,7 +71,7 @@ _automatically_ "_expire_" the data
     In progress, Closed - at the simplest level, but this could
     be made much more detailed and interesting)
 
-### "Nice-to-have"
+### "Nice-to-have"
 
 + Logged in users' searches automatically `POST`ed (_appended_) to the CRM
 + Ability to analyse data across enquiries (_multiple sessions + devices_)
