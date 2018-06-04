@@ -21,7 +21,8 @@ Should we make this a "real" HTML table for sorting/filtering?
 
 | Product/Service Name | Open/Closed Source | Cost | Pricing Model | API | UX | Keyboard Shortcuts | Automation | Kanban / Drag+Drop | Custom Fields/Data | Custom Workflow |
 | ------------- |:-------------:| ----- | --- |:--- | --- | --- | --- | --- | --- | --- |
-| [Getbase.com](https://getbase.com) | Closed | [$45/user/month](https://getbase.com/pricing) for _first_ user | 3 Tiers: Starter: $45/u/m, "Professional": $95/u/m & "Enterprise": $145/u/m | REST https://developers.getbase.com | "Traditional" | [Yes](https://support.getbase.com/hc/en-us/articles/204508995-Can-I-use-Keyboard-Shortcuts) | Yes | No | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
+| [Base CRM](https://getbase.com) | Closed | [$45/user/month](https://getbase.com/pricing) | 3 Tiers: Starter: $45/u/m, "Professional": $95/u/m & "Enterprise": $145/u/m | REST https://developers.getbase.com | "Traditional" | [Yes](https://support.getbase.com/hc/en-us/articles/204508995-Can-I-use-Keyboard-Shortcuts) | Yes | No | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
+| [Freshsales CRM](https://www.freshworks.com/freshsales-crm) | Closed | [$18/user/month](https://www.freshworks.com/freshsales-crm)| 4 Tiers: Blossom: $9/u/m, Garden: $18/u/m, "Estate": $36/u/m & "Forrest": $57/u/m | REST https://www.freshsales.io/api | "Kanban" | No | Yes | Yes | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
 | [Hubspot.com](https://www.hubspot.com) | Closed | [$42/user/month](https://www.hubspot.com/pricing/sales) for _first_ user | 3 Tiers: "Free", Starter: $42 for **1 user** & "Professional": $330 for 5 users = **$66/u/m** | REST https://developers.hubspot.com/ | Kanban | [**No**](https://community.hubspot.com/t5/HubSpot-Ideas/keyboard-shortcuts/idi-p/12244) | Yes | Yes | [Yes](https://api.insight.ly/v2.2/Help#!/Overview/Technical_Details) | Yes |
 | [insightly.com](https://www.insightly.com) | Closed | [$49/user/month](https://www.insightly.com/pricing) | 3 Tiers: "Plus": $29/u/m, Professional: $49/user/month & "Enterprise": $99/u/m | REST https://api.insight.ly/v2.2/Help | Kanban/Outlook Inbox | [Yes](https://support.insight.ly/hc/en-us/articles/204248780-Keyboard-shortcuts) | Yes | Yes | Yes | Yes |
 | [Pipedrive.com](https://www.pipedrive.com) | Closed | [$29/user/month](https://www.pipedrive.com/en-gb/plans) | 3 Tiers: Silver: 15/u/m, Gold: $29/u/m & "Platinum": $75/u/m | REST + Webhooks https://developers.pipedrive.com/docs/api/v1/ | Kanban Board | Yes | Yes | Yes | Yes | Yes |
@@ -60,7 +61,28 @@ and the pricing is comparatively _high_.
 
 
 
+## Freshsales CRM
 
+General purpose CRM system with all the features you would expect.
+Includes built-in phone, email and activity capture.
+https://www.freshworks.com/freshsales-crm <br />
+Full-list of features: https://www.freshworks.com/freshsales-crm/features/
+
+![image](https://user-images.githubusercontent.com/194400/40937789-ad399446-6837-11e8-97a5-96d917d314d8.png)
+
+Has a "Kanban" style drag-and-drop UI: <br />
+![freshsales-kanban-ui](https://user-images.githubusercontent.com/194400/40937600-0cbbf54a-6837-11e8-8e39-23509401797e.png)
+
+Pricing: https://www.freshworks.com/freshsales-crm/pricing/
+![image](https://user-images.githubusercontent.com/194400/40938119-c82dd126-6838-11e8-8a9a-f6c0160eb405.png)
+
+API: https://www.freshsales.io/api
+![freshsales-api-custom-fields](https://user-images.githubusercontent.com/194400/40938884-093127f2-683b-11e8-8f93-4acb958b9321.png)
+
+No "real-time" API, but if that is not a "must have"
+then this could be a good option.
+
++ Review: https://www.capterra.com/p/156019/Freshsales
 
 
 ## HubSpot CRM
