@@ -1,3 +1,50 @@
+## Intro / Overview
+
+Selecting a CRM system is decision that should be _carefully considered_.
+The CRM is a business system that is "core" to sales/operations
+and selecting a "full featured" product can be huge "asset" for the business.
+
+If we need "telephone integration" and it's _not available_ in a "cheaper" CRM
+provider, and then we end up having to run two separate systems one for
+contact/account management and the other for making/receiving/recording calls,
+it can rapidly add up to a lot of wasted time/effort which negates the point
+of spending less on the "cheaper" CRM.
+
+The best way to think of a CRM is as a "***business process automation***" tool,
+not a "database" with a "drag-and-drop" UI. <br />
+see: https://hbr.org/2016/10/customer-relationship-automation-is-the-new-crm
+
+Most of the CRM providers include similar basic features,
+however the way we _should_ look at them is by asking the question(s): <br />
++ "Which CRM will make my business run most effectively"?
++ "Which CRM will give the sales/support people in our team most productive?"
+
+If the CRM wastes minutes of key team member(s) time each day this can
+add up to several $$'s/day of lost time
+and frustration through duplicated effort.
+The _reason_ certain CRM providers _charge_ more for their product/SaaS,
+is because they offer an _objectively better product_ that fits the needs
+of a specific market segment.
+
+### Telephone-based Sales
+
+The web-based enquiry form is just an _initial_ way for the prospective
+customer to contact us. From there most of our business is conducted by phone.
+
+To date the phone calls are _outbound_ (_from the CEO's mobile_) to the
+prospective client and then a follow-up email is sent.
+
+If the CRM system does not have telephony integration this _manual_
+(_unscalable/inefficient_) process will continue without any automation.
+
+If the business is to _expand_ we need a clearly defined set of sales "channels"
+with _one_ telephone number for inbound/outbound calls, sms and email
+where the _business_ is in control of the "experience", "branding"
+and "data privacy".
+
+https://www.agilecrm.com/blog/10-advantages-integrating-telephony-crm
+
+
 ## Considerations
 
 + Is the **UI/UX _fixed_** or ***customisable***?
