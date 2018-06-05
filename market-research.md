@@ -12,23 +12,24 @@ vs. "***nice to have***".
 to determine which is **most intuitive/user-friendly**.
 
 
-
 ## Comparison Table
 
 <!--
 Should we make this a "real" HTML table for sorting/filtering?
 -->
 
-| Product/Service Name | Open/Closed Source | Cost | Pricing Model | API | UX | Keyboard Shortcuts | Automation | Kanban / Drag+Drop | Custom Fields/Data | Custom Workflow |
+| Product/Service Name | Open/Closed Source | Cost | Pricing Model | API | UX | Keyboard Shortcuts | Automation | Kanban / Drag+Drop | Custom Fields/Data | Custom Workflow | Telephony Integration |
 | ------------- |:-------------:| ----- | --- |:--- | --- | --- | --- | --- | --- | --- |
-| [Base CRM](https://getbase.com) | Closed | [$45/user/month](https://getbase.com/pricing) | 3 Tiers: Starter: $45/u/m, "Professional": $95/u/m & "Enterprise": $145/u/m | REST https://developers.getbase.com | "Traditional" | [Yes](https://support.getbase.com/hc/en-us/articles/204508995-Can-I-use-Keyboard-Shortcuts) | Yes | No | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
-| [Freshsales CRM](https://www.freshworks.com/freshsales-crm) | Closed | [$18/user/month](https://www.freshworks.com/freshsales-crm)| 4 Tiers: Blossom: $9/u/m, Garden: $18/u/m, "Estate": $36/u/m & "Forrest": $57/u/m | REST https://www.freshsales.io/api | "Kanban" | No | Yes | Yes | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
-| [Hubspot.com](https://www.hubspot.com) | Closed | [$42/user/month](https://www.hubspot.com/pricing/sales) for _first_ user | 3 Tiers: "Free", Starter: $42 for **1 user** & "Professional": $330 for 5 users = **$66/u/m** | REST https://developers.hubspot.com/ | Kanban | [**No**](https://community.hubspot.com/t5/HubSpot-Ideas/keyboard-shortcuts/idi-p/12244) | Yes | Yes | [Yes](https://api.insight.ly/v2.2/Help#!/Overview/Technical_Details) | Yes |
-| [insightly.com](https://www.insightly.com) | Closed | [$49/user/month](https://www.insightly.com/pricing) | 3 Tiers: "Plus": $29/u/m, Professional: $49/user/month & "Enterprise": $99/u/m | REST https://api.insight.ly/v2.2/Help | Kanban/Outlook Inbox | [Yes](https://support.insight.ly/hc/en-us/articles/204248780-Keyboard-shortcuts) | Yes | Yes | Yes | Yes |
-| [Pipedrive.com](https://www.pipedrive.com) | Closed | [$29/user/month](https://www.pipedrive.com/en-gb/plans) | 3 Tiers: Silver: 15/u/m, Gold: $29/u/m & "Platinum": $75/u/m | REST + Webhooks https://developers.pipedrive.com/docs/api/v1/ | Kanban Board | Yes | Yes | Yes | Yes | Yes |
-| [Salesforce.com](https://www.salesforce.com) | Closed | [$25/user/month](https://www.salesforce.com/editions-pricing/platform) | Variable/Opaque from $25 to $300/u/m! | REST + Stream https://developer.salesforce.com/page/Salesforce_APIs | "Classic" ("Clunky") or "Lightning" (Drag-and-drop) | Yes | Yes | Yes | Yes | Yes |
-| [Streak.com](https://www.streak.com) | Closed | $49/user/month | 3 Tiers: Free, Professional ($49/user/month) & "Enterprise" ($99/user/month) | REST https://streak.readme.io/ | Gmail Inbox | Yes | Yes | **No** | **No** | **No** |
-| [SugarCRM.com](https://www.sugarcrm.com) | Closed | [$40/user/month](https://www.sugarcrm.com/product/pricing-editions) | 3 Tiers: Professional ($40/u/m),  "Enterprise" ($65/u/m) & "Ultimate" ($150/u/m) | REST http://support.sugarcrm.com/Documentation/?docVersion=8.0&docEdition=Pro | "Traditional CRM" (no kanban) | Yes | Yes | **No** | Yes | Yes |
+| [Agile CRM](https://getbase.com) | Closed | [$14.99/user/month](https://getbase.com/pricing) (_**$8.99/u/m** paid annually_) | 3 Tiers: Starter: $14.99/u/m, "Regular": $49.99/u/m & "Enterprise": $79.99/u/m | REST https://www.agilecrm.com/api | Kanban | [Yes](https://www.agilecrm.com/product-updates#) | Yes | Yes | [Yes](https://www.agilecrm.com/api) | Yes | [Yes](https://www.agilecrm.com/crm-telephony) |
+| [Close.io](https://close.io/) | Closed | [$65/user/month](https://close.io/pricing) | 3 Tiers: Basic: $65/u/m, "Professional": $110/u/m & Business: $165/u/m | REST https://close.io/api | "Inbox" | Yes | Yes | No | [Yes](https://close.io/api/) | No | Yes |
+| [Base CRM](https://getbase.com) | Closed | [$45/user/month](https://getbase.com/pricing) | 3 Tiers: Starter: $45/u/m, "Professional": $95/u/m & "Enterprise": $145/u/m | REST https://developers.getbase.com | "Traditional" | [Yes](https://support.getbase.com/hc/en-us/articles/204508995-Can-I-use-Keyboard-Shortcuts) | Yes | No | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No | No |
+| [Freshsales CRM](https://www.freshworks.com/freshsales-crm) | Closed | [$18/user/month](https://www.freshworks.com/freshsales-crm)| 4 Tiers: Blossom: $9/u/m, Garden: $18/u/m, "Estate": $36/u/m & "Forrest": $57/u/m | REST https://www.freshsales.io/api | "Kanban" | No | Yes | Yes | [Yes](https://www.freshworks.com/freshsales-crm/phone/) | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
+| [Hubspot.com](https://www.hubspot.com) | Closed | [$42/user/month](https://www.hubspot.com/pricing/sales) for the _first_ user | 3 Tiers: "Free", Starter: $42 for **1 user** & "Professional": $330 for 5 users = **$66/u/m** | REST https://developers.hubspot.com/ | Kanban | [**No**](https://community.hubspot.com/t5/HubSpot-Ideas/keyboard-shortcuts/idi-p/12244) | Yes | Yes | [Yes](https://api.insight.ly/v2.2/Help#!/Overview/Technical_Details) | Yes | [Yes](https://www.hubspot.com/products/sales/click-to-call) $$! |
+| [insightly.com](https://www.insightly.com) | Closed | [$49/user/month](https://www.insightly.com/pricing) | 3 Tiers: "Plus": $29/u/m, Professional: $49/user/month & "Enterprise": $99/u/m | REST https://api.insight.ly/v2.2/Help | Kanban/Outlook Inbox | [Yes](https://support.insight.ly/hc/en-us/articles/204248780-Keyboard-shortcuts) | Yes | Yes | Yes | Yes | [**No**](https://support.insight.ly/hc/en-us/community/posts/115009496948-Insightly-Telephony) |
+| [Pipedrive.com](https://www.pipedrive.com) | Closed | [$29/user/month](https://www.pipedrive.com/en-gb/plans) | 3 Tiers: Silver: 15/u/m, Gold: $29/u/m & "Platinum": $75/u/m | REST + Webhooks https://developers.pipedrive.com/docs/api/v1/ | Kanban Board | Yes | Yes | Yes | Yes | Yes | **No** |
+| [Salesforce.com](https://www.salesforce.com) | Closed | [$25/user/month](https://www.salesforce.com/editions-pricing/platform) | Variable/Opaque from $25 to $300/u/m! | REST + Stream https://developer.salesforce.com/page/Salesforce_APIs | "Classic" ("Clunky") or "Lightning" (Drag-and-drop) | Yes | Yes | Yes | Yes | Yes | **Yes** |
+| [Streak.com](https://www.streak.com) | Closed | $49/user/month | 3 Tiers: Free, Professional ($49/user/month) & "Enterprise" ($99/user/month) | REST https://streak.readme.io/ | Gmail Inbox | Yes | Yes | **No** | **No** | **No** | **No** |
+| [SugarCRM.com](https://www.sugarcrm.com) | Closed | [$40/user/month](https://www.sugarcrm.com/product/pricing-editions) | 3 Tiers: Professional ($40/u/m),  "Enterprise" ($65/u/m) & "Ultimate" ($150/u/m) | REST http://support.sugarcrm.com/Documentation/?docVersion=8.0&docEdition=Pro | "Traditional CRM" (no kanban) | Yes | Yes | **No** | Yes | Yes | Yes |
 
 
 # List (Alphabetical)
@@ -36,6 +37,52 @@ Should we make this a "real" HTML table for sorting/filtering?
 > Meta: should this list be Alphabetical or in order of Popularity?
 (_I get the feeling that Alphabetical will make locating an entry easier
 and thus aid maintenance ..._)
+
+
+## Agile CRM
+
+Agile CRM is an "all-in-one" CRM system that has good (Kanban) UI,
+REST API and integrations with 3rd party services such as Twilio
+for making/receiving/recording sales calls and sending/receiving SMS.
+
+![image](https://user-images.githubusercontent.com/194400/40984108-fdb60b74-68d8-11e8-88ae-bd695e6f4521.png)
+
+Kanban ("_drag-and-drop_") User Interface:<br />
+![agile-crm-kanban](https://user-images.githubusercontent.com/194400/40979133-cef0f198-68cc-11e8-875b-a2d602f02b14.png)
+
+### Pricing
+
+https://www.agilecrm.com/pricing
+![agile-crm-pricing](https://user-images.githubusercontent.com/194400/40968815-586fbd88-68ae-11e8-9d0a-aa3fbb50917a.png)
+
+$14.99/u/m (monthly) or $8.99/u/m payed 2-years up-front.
+We suggest doing the "trial" and see how you get on with the UX
+before a commitment.
+
+### API
+
+The AgileCRM API https://www.agilecrm.com/api is well documented
+and has examples on GitHub (_including **custom fields**_):
+https://github.com/agilecrm/rest-api#contact-json-example
+
+
+### Twilio (Telephony & SMS) Integration
+
+Twilio is a widly used telepone & SMS service provider
+with great international coverage, an excellent API
+and competitive pricing model. https://www.twilio.com/products
+
+![twilio-product](https://user-images.githubusercontent.com/194400/40984319-7c0b8bc0-68d9-11e8-99bc-ee1512fd647a.png)
+
+https://www.twilio.com/voice/pricing/gb
+![twilio-pricing](https://user-images.githubusercontent.com/194400/40983725-265de84a-68d8-11e8-9579-5962a122aecb.png)
+
+Read more: https://customers.twilio.com
+![twilio-customer-stories](https://user-images.githubusercontent.com/194400/40984360-9d29ac2e-68d9-11e8-8f1c-0ba95eea744d.png)
+
+### Automation
+
+see: https://www.agilecrm.com/blog/4-keys-getting-inbox-control-automation
 
 ## Base CRM
 
@@ -60,6 +107,38 @@ Overall Base CRM is _not_ a contender because the UI is "dated"
 and the pricing is comparatively _high_.
 
 
+## Close.io
+
+Close.io is an "up-and-coming" CRM system that is "hot" in Silicon Valley:
+https://close.io/product/
+Having been through the "Y Combinator" startup accelerator in 2012,
+Close.io has not wasted time building an impressive
+feature-set and customer base.
+
+![close.io-close-more-deals](https://user-images.githubusercontent.com/194400/40978357-55f08c64-68cb-11e8-9a1c-c02edc4aeafb.png)
+
+### UI/UX
+
+The UI is _not_ "Kanban", rather it's an "inbox" and "timeline" paradigm
+and their focus is speed of interaction.
+
+![close-io-ui-inbox](https://user-images.githubusercontent.com/194400/40987764-527ce990-68e1-11e8-895f-89f51264a2b4.png)
+
+
+https://close.io/pricing
+![close-io-pricing](https://user-images.githubusercontent.com/194400/40978219-eeed452a-68ca-11e8-93cc-a5bff816be20.png)
+
+This pricing can seem "steep" on the surface, but thier workflow automation
+and "single view" UI is worth considering.
+Watch their "overview" video: https://close.io
+
+
+### API
+
+https://developer.close.io
+http://blog.close.io/the-tech-stack-behind-close-io-sales-communication
+
+<br />
 
 ## Freshsales CRM
 
@@ -191,7 +270,15 @@ Customer "getting started": https://youtu.be/pzs5hTa3Uxs (_Mar 27, 2017_)
 API: https://www.pipedrive.com/en/features/api
 Custom Fields: https://pipedrive.readme.io/docs/core-api-concepts-custom-fields
 
+### Integrations?
 
+At present Pipedrive does not have an integration with any telephony providers
+see: https://www.pipedrive.com/en-gb/features/integrations
+
+If the plan is to make/receive telephone calls _separately_ from the CRM,
+this is not an issue, however we _strongly_ recommend having the two systems
+tightly integrated to avoid wasting time/effort especially with
+"high value" clients.
 
 
 
@@ -278,6 +365,9 @@ https://en.wikipedia.org/wiki/Comparison_of_CRM_systems
 (_incomplete but has the most popular..._)
 + Sales force management system (_general info_):
 https://en.wikipedia.org/wiki/Sales_force_management_system
++ Automation Is the New CRM:
+https://hbr.org/2016/10/customer-relationship-automation-is-the-new-crm
+(_open it in "incognito" window to avoid using up HBR article "allowance"_)
 
 ### Lists
 
@@ -285,3 +375,5 @@ https://en.wikipedia.org/wiki/Sales_force_management_system
 https://everhour.com/blog/best-crm-software
 + List of 10 Best CRM Software Tools:
 https://financesonline.com/list-10-best-crm-software-tools/
++ "Long List" of available CRM systems:
+https://www.capterra.com/customer-relationship-management-software/
