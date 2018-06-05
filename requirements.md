@@ -77,8 +77,16 @@ We have distilled the CRM requirements into the following:
 1. **Lead management** (_**Kanban**-style board_) to visualise active leads
 and easily "**_drag-and-drop_**" from one stage/phase to the next.
 
-2. **API** availability (_preferablly "streaming"_) so leads can be piped
+2. **API** availability so leads can be piped
 in directly without having to email or perform manual data entry.
+The API _must_ have "custom fields" so we can store additional data.
+Ideally the API should allow for "**streaming**" so that data is updated
+in "***real-time***".
+>_We hate non-realtime systems that require us to manually update / refresh
+  the "mailing list" before sending out every time.
+  I'd like to just choose a grouping within a list and send knowing that
+  all new subscribers and relevant people are being mailed including
+  the automatic unsubscribes_.
 
 3. **Email Marketing/Automation** integrated or potentially contactable
 via a live API to Email service (_e.g: Mail Chimp_) which we already use
@@ -94,11 +102,12 @@ if they fail to open or click the link to confirm,
 _automatically_ "_expire_" the data
 (`delete` _after a pre-defined period_).
 
->_We hate non-realtime systems that require us to manually update / refresh
-  the "mailing list" before sending out every time.
-  I'd like to just choose a grouping within a list and send knowing that
-  all new subscribers and relevant people are being mailed including
-  the automatic unsubscribes_.
+6. **Telephony integration** to allow telephone calls to be made/received
+from the _same_ platform without people having to waste time "keying" in
+or copy-pasting telephone numbers into a mobile/device. This will allow much
+better coordination in the team and help grow a dedicated sales/support team
+beyond the founders making the calls.
+
 
 ## API Requirements
 

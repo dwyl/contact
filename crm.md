@@ -1,45 +1,177 @@
+# Charter Index CRM
+
+![crm-data-flow](https://user-images.githubusercontent.com/194400/41005719-8f83c888-6916-11e8-960b-8ee173f2ffcc.png)
+
+Capturing, storing and processing **customer data**
+is the _heart_ of Charter Index's business.
+
+## Intro / Overview
+
+Selecting a CRM system is decision that should be _carefully considered_.
+The CRM is a business system that is "core" to sales/operations
+and selecting a "full featured" product can be huge "asset" for the business.
+
+If we need "telephone integration" and it's _not available_ in a "cheaper" CRM
+provider, and then we end up having to run two separate systems one for
+contact/account management and the other for making/receiving/recording calls,
+it can rapidly add up to a lot of wasted time/effort which negates the point
+of spending less on the "cheaper" CRM.
+
+The best way to think of a CRM is as a "***business process automation***" tool,
+not a "database" with a "drag-and-drop" UI. <br />
+see: https://hbr.org/2016/10/customer-relationship-automation-is-the-new-crm
+
+Most of the CRM providers include similar basic features,
+however the way we _should_ look at them is by asking the question(s): <br />
++ "Which CRM will make my business run most effectively"?
++ "Which CRM will give the sales/support people in our team most productive?"
+
+If the CRM wastes minutes of key team member(s) time each day this can
+add up to several $$'s/day of lost time
+and frustration through duplicated effort.
+The _reason_ certain CRM providers _charge_ more for their product/SaaS,
+is because they offer an _objectively better product_ that fits the needs
+of a specific market segment.
+
+### Telephone-based Sales ?
+
+The web-based enquiry form is just an _initial_ way for the prospective
+customer to contact us. From there most of our business is conducted by phone.
+
+To date the phone calls are _outbound_ (_from the CEO's mobile_) to the
+prospective client and then a follow-up email is sent.
+
+If the CRM system does not have telephony integration this _manual_
+(_unscalable/inefficient_) process will continue without any automation.
+
+If the business is to _expand_ we need a clearly defined set of sales "channels"
+with _one_ telephone number for inbound/outbound calls, sms and email
+where the _business_ is in control of the "experience", "branding"
+and "data privacy".
+
+https://www.agilecrm.com/blog/10-advantages-integrating-telephony-crm
+
+
+## Considerations
+
++ Is the **UI/UX _fixed_** or ***customisable***?
+(_can we change it if we don't like it or find the workflow sfrustrating_?)
++ Does the system detect the "presence" of the person updating
+the contact/details to avoid two people attempting to edit simultaneously?
++ Is the **UI/API updated** in **_real-time_**
+or does it require "manual refresh"?
++ Can **custom fields** easily be added via UI/API and can they be used
+in the workflow without lots of extra "clicks" (_for each record_)? e.g:
+  + **Organise** the Kanban Board by "**departure date**"
+to _prioritise_ clients who are need responses the _soonest_. <br />
+  + Or **Sort** the Overview by "**budget**" so the highest value prospect
+receives faster/more attention/care. <br />
+  + Location-based view on Mobile device to ensure that contacts/leads
+are ordered for a given geography if the _field-based sales consultant_
+is near to the prospect(s) _current_ location.
++ **Integration** with **Customer Support System**? is the CRM purely focussed
+on getting sales or does it manage the full "***lifecycle***" including
+reviews/feedback and ***complaints***?
++ **Data protection** - where is the data stored? EU datacenter for EU-based
+customers/contacts or _everything_ in a US-based datacenter?
++ Are **Transaction Processed/Logged** in the system so customer value
+is _visible_ not just "status". This is _essential_ for repeat sales.
+
+## Requirements
+
+We have distilled the CRM requirements into the following:
+
+1. **Lead management** (_**Kanban**-style board_) to visualise active leads
+and easily "**_drag-and-drop_**" from one stage/phase to the next.
+
+2. **API** availability so leads can be piped
+in directly without having to email or perform manual data entry.
+The API _must_ have "custom fields" so we can store additional data.
+Ideally the API should allow for "**streaming**" so that data is updated
+in "***real-time***".
+>_We hate non-realtime systems that require us to manually update / refresh
+  the "mailing list" before sending out every time.
+  I'd like to just choose a grouping within a list and send knowing that
+  all new subscribers and relevant people are being mailed including
+  the automatic unsubscribes_.
+
+3. **Email Marketing/Automation** integrated or potentially contactable
+via a live API to Email service (_e.g: Mail Chimp_) which we already use
+
+4. **Data privacy** guarantees ensure data privacy, security & reliability
+(_encryption, backup, access controls & redundancy_) to avoid company liability.
+
+5. ***GDPR Compliance***: easily see who has given consent for us to store/retain
+their data. If person has _not_ given consent
+(_e.g existing users or "cold" prospects_)
+re-request it by sending them a tracked email
+if they fail to open or click the link to confirm,
+_automatically_ "_expire_" the data
+(`delete` _after a pre-defined period_).
+
+6. **Telephony integration** to allow telephone calls to be made/received
+from the _same_ platform without people having to waste time "keying" in
+or copy-pasting telephone numbers into a mobile/device. This will allow much
+better coordination in the team and help grow a dedicated sales/support team
+beyond the founders making the calls.
+
+
+## API Requirements
+
++ `POST` requests to create/update an enquiry record:
+  + contact info (_Name, Location, Phone Number, Email_)
+  + product name
+  + product link
+  + dates (from / to)
+  + estimated total budget/cost)
+  + contact_id
+  + **Viewed products** so customer service can see what else
+  the person has looked at while browsing the site.
++ `GET` requests for:
+  + **User profile** (name, contact details, email/phone verified)
+  + **Enquiry details** (date, product name, product URL)
+  + **Enquiry status** (latest updated date, status. e.g: Awaiting first contact,
+    In progress, Closed - at the simplest level, but this could
+    be made much more detailed and interesting)
+
+### "Nice-to-have"
+
++ Logged in users' searches automatically `POST`ed (_appended_) to the CRM
++ Ability to analyse data across enquiries (_multiple sessions + devices_)
++ If in the CRM we have to send things like partial enquiries or
+  saved products as just 'notes' in the contact because
+  the CRM doesn't support custom objects for example,
+  it'll make it difficult for any real data analysis to be built in
++ **Partial enquiries** e.g: someone starts a search or enquiry but doesn't
+complete it or the person is logged in, presses 'request availability'
+on the individual product page, but then never completes the form.
+
 # Market Research
-
-The purpose of this doc is to have _comprehensive_
-[Market research](https://en.wikipedia.org/wiki/Market_research)
-of CRM systems for the following reasons:
-
-1. To know **what** `else` is available and ***why*** people/teams would
-want to use the product/service.
-2. To _understand_ what **features** are considered ***essential***
-vs. "***nice to have***".
-3. **Test UX** of the widest possible range of products/services
-to determine which is **most intuitive/user-friendly**.
-
-<!--
-Should we make this a "real" HTML table for sorting/filtering?
--->
 
 ## Comparison Table
 
-| Product/Service Name | Open/Closed Source | Cost | Pricing Model | API | UX | Keyboard Shortcuts | Automation | Kanban / Drag+Drop | Custom Fields/Data | Custom Workflow | Telephony Integration |
-| ------------- |:-------------:| ----- | --- |:--- | --- | --- | --- | --- | --- | --- |
-| [Active Campaign](https://www.activecampaign.com/crm) | Closed | Flat [$99/month](https://www.activecampaign.com/pricing) for 2.5k contacts (25 users) | 4 Tiers: Lite: 39/mo (3 users), Plus: $99/mo (25 u), Professional: $129/mo (50 u) & "Enterprise": $229/mo (ultd. users) | REST https://www.activecampaign.com/api | Kanban | No | Yes | Yes | [Yes](https://www.activecampaign.com/api) | Yes | **No** |
-| [Agile CRM](https://getbase.com) | Closed | [$14.99/user/month](https://getbase.com/pricing) (_**$8.99/u/m** paid annually_) | 3 Tiers: Starter: $14.99/u/m, "Regular": $49.99/u/m & "Enterprise": $79.99/u/m | REST https://www.agilecrm.com/api | Kanban | [Yes](https://www.agilecrm.com/product-updates#) | Yes | Yes | [Yes](https://www.agilecrm.com/api) | Yes | [Yes](https://www.agilecrm.com/crm-telephony) |
-| [Close.io](https://close.io/) | Closed | [$65/user/month](https://close.io/pricing) | 3 Tiers: Basic: $65/u/m, "Professional": $110/u/m & Business: $165/u/m | REST https://close.io/api | "Inbox" | Yes | Yes | No | [Yes](https://close.io/api/) | No | Yes |
-| [Base CRM](https://getbase.com) | Closed | [$45/user/month](https://getbase.com/pricing) | 3 Tiers: Starter: $45/u/m, "Professional": $95/u/m & "Enterprise": $145/u/m | REST https://developers.getbase.com | "Traditional" | [Yes](https://support.getbase.com/hc/en-us/articles/204508995-Can-I-use-Keyboard-Shortcuts) | Yes | No | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No | No |
-| [Freshsales CRM](https://www.freshworks.com/freshsales-crm) | Closed | [$18/user/month](https://www.freshworks.com/freshsales-crm)| 4 Tiers: Blossom: $9/u/m, Garden: $18/u/m, "Estate": $36/u/m & "Forrest": $57/u/m | REST https://www.freshsales.io/api | "Kanban" | No | Yes | Yes | [Yes](https://www.freshworks.com/freshsales-crm/phone/) | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
-| [Hubspot.com](https://www.hubspot.com) | Closed | [$42/user/month](https://www.hubspot.com/pricing/sales) for the _first_ user | 3 Tiers: "Free", Starter: $42 for **1 user** & "Professional": $330 for 5 users = **$66/u/m** | REST https://developers.hubspot.com/ | Kanban | [**No**](https://community.hubspot.com/t5/HubSpot-Ideas/keyboard-shortcuts/idi-p/12244) | Yes | Yes | [Yes](https://api.insight.ly/v2.2/Help#!/Overview/Technical_Details) | Yes | [Yes](https://www.hubspot.com/products/sales/click-to-call) $$! |
-| [insightly.com](https://www.insightly.com) | Closed | [$49/user/month](https://www.insightly.com/pricing) | 3 Tiers: "Plus": $29/u/m, Professional: $49/user/month & "Enterprise": $99/u/m | REST https://api.insight.ly/v2.2/Help | Kanban/Outlook Inbox | [Yes](https://support.insight.ly/hc/en-us/articles/204248780-Keyboard-shortcuts) | Yes | Yes | Yes | Yes | [**No**](https://support.insight.ly/hc/en-us/community/posts/115009496948-Insightly-Telephony) |
-| [Nimble CRM]( https://www.nimble.com) | Closed | [$19/u/m](https://www.nimble.com/pricing) | 2 Tiers: "Contact": $9/mo & "Business": $19/u/m | REST https://nimble.readthedocs.io | Kanban/Timeline | Yes | Yes | Yes | [Yes](https://www.activecampaign.com/api) | No | **No** |
-| [Pipedrive.com](https://www.pipedrive.com) | Closed | [$29/user/month](https://www.pipedrive.com/en-gb/plans) | 3 Tiers: Silver: 15/u/m, Gold: $29/u/m & "Platinum": $75/u/m | REST + Webhooks https://developers.pipedrive.com/docs/api/v1/ | Kanban Board | Yes | Yes | Yes | Yes | Yes | **No** |
-| [Salesforce.com](https://www.salesforce.com) | Closed | [$25/user/month](https://www.salesforce.com/editions-pricing/platform) | Variable/Opaque from $25 to $300/u/m! | REST + Stream https://developer.salesforce.com/page/Salesforce_APIs | "Classic" ("Clunky") or "Lightning" (Drag-and-drop) | Yes | Yes | Yes | Yes | Yes | **Yes** |
-| [Streak.com](https://www.streak.com) | Closed | $49/user/month | 3 Tiers: Free, Professional ($49/user/month) & "Enterprise" ($99/user/month) | REST https://streak.readme.io/ | Gmail Inbox | Yes | Yes | **No** | **No** | **No** | **No** |
-| [SugarCRM.com](https://www.sugarcrm.com) | Closed | [$40/user/month](https://www.sugarcrm.com/product/pricing-editions) | 3 Tiers: Professional ($40/u/m),  "Enterprise" ($65/u/m) & "Ultimate" ($150/u/m) | REST http://support.sugarcrm.com/Documentation/?docVersion=8.0&docEdition=Pro | "Traditional CRM" (no kanban) | Yes | Yes | **No** | Yes | Yes | Yes |
+<!-- formatting via: http://markdowntable.com/ -->
+
+| Product/Service Name                                        | Open/Closed Source | Cost                                                                                  | Pricing Model                                                                                                           | API                                                                           | UX                                                  | Keyboard Shortcuts                                                                          | Automation | Kanban / Drag+Drop | Custom Fields/Data                                                              | Custom Workflow                                                                 | Telephony Integration                                                                          |
+|-------------------------------------------------------------|-:-:----------------|---------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|-:-----------------------------------------------------------------------------|-----------------------------------------------------|---------------------------------------------------------------------------------------------|------------|--------------------|---------------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| [Active Campaign](https://www.activecampaign.com/crm)       | Closed             | Flat [$99/month](https://www.activecampaign.com/pricing) for 2.5k contacts (25 users) | 4 Tiers: Lite: 39/mo (3 users), Plus: $99/mo (25 u), Professional: $129/mo (50 u) & "Enterprise": $229/mo (ultd. users) | REST https://www.activecampaign.com/api                                       | Kanban                                              | No                                                                                          | Yes        | Yes                | [Yes](https://www.activecampaign.com/api)                                       | Yes                                                                             | **No**                                                                                         |
+| [Agile CRM](https://getbase.com)                            | Closed             | [$14.99/user/month](https://getbase.com/pricing) (_**$8.99/u/m** paid annually_)      | 3 Tiers: Starter: $14.99/u/m, "Regular": $49.99/u/m & "Enterprise": $79.99/u/m                                          | REST https://www.agilecrm.com/api                                             | Kanban                                              | [Yes](https://www.agilecrm.com/product-updates#)                                            | Yes        | Yes                | [Yes](https://www.agilecrm.com/api)                                             | Yes                                                                             | [Yes](https://www.agilecrm.com/crm-telephony)                                                  |
+| [Close.io](https://close.io/)                               | Closed             | [$65/user/month](https://close.io/pricing)                                            | 3 Tiers: Basic: $65/u/m, "Professional": $110/u/m & Business: $165/u/m                                                  | REST https://close.io/api                                                     | "Inbox"                                             | Yes                                                                                         | Yes        | No                 | [Yes](https://close.io/api/)                                                    | No                                                                              | Yes                                                                                            |
+| [Base CRM](https://getbase.com)                             | Closed             | [$45/user/month](https://getbase.com/pricing)                                         | 3 Tiers: Starter: $45/u/m, "Professional": $95/u/m & "Enterprise": $145/u/m                                             | REST https://developers.getbase.com                                           | "Traditional"                                       | [Yes](https://support.getbase.com/hc/en-us/articles/204508995-Can-I-use-Keyboard-Shortcuts) | Yes        | No                 | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No                                                                              | No                                                                                             |
+| [Freshsales CRM](https://www.freshworks.com/freshsales-crm) | Closed             | [$18/user/month](https://www.freshworks.com/freshsales-crm)                           | 4 Tiers: Blossom: $9/u/m, Garden: $18/u/m, "Estate": $36/u/m & "Forrest": $57/u/m                                       | REST https://www.freshsales.io/api                                            | "Kanban"                                            | No                                                                                          | Yes        | Yes                | [Yes](https://www.freshworks.com/freshsales-crm/phone/)                         | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No                                                                                             |
+| [Hubspot.com](https://www.hubspot.com)                      | Closed             | [$42/user/month](https://www.hubspot.com/pricing/sales) for the _first_ user          | 3 Tiers: "Free", Starter: $42 for **1 user** & "Professional": $330 for 5 users = **$66/u/m**                           | REST https://developers.hubspot.com/                                          | Kanban                                              | [**No**](https://community.hubspot.com/t5/HubSpot-Ideas/keyboard-shortcuts/idi-p/12244)     | Yes        | Yes                | [Yes](https://api.insight.ly/v2.2/Help#!/Overview/Technical_Details)            | Yes                                                                             | [Yes](https://www.hubspot.com/products/sales/click-to-call) $$!                                |
+| [insightly.com](https://www.insightly.com)                  | Closed             | [$49/user/month](https://www.insightly.com/pricing)                                   | 3 Tiers: "Plus": $29/u/m, Professional: $49/user/month & "Enterprise": $99/u/m                                          | REST https://api.insight.ly/v2.2/Help                                         | Kanban/Outlook Inbox                                | [Yes](https://support.insight.ly/hc/en-us/articles/204248780-Keyboard-shortcuts)            | Yes        | Yes                | Yes                                                                             | Yes                                                                             | [**No**](https://support.insight.ly/hc/en-us/community/posts/115009496948-Insightly-Telephony) |
+| [Nimble CRM]( https://www.nimble.com)                       | Closed             | [$19/u/m](https://www.nimble.com/pricing)                                             | 2 Tiers: "Contact": $9/mo & "Business": $19/u/m                                                                         | REST https://nimble.readthedocs.io                                            | Kanban/Timeline                                     | Yes                                                                                         | Yes        | Yes                | [Yes](https://www.activecampaign.com/api)                                       | No                                                                              | **No**                                                                                         |
+| [Pipedrive.com](https://www.pipedrive.com)                  | Closed             | [$29/user/month](https://www.pipedrive.com/en-gb/plans)                               | 3 Tiers: Silver: 15/u/m, Gold: $29/u/m & "Platinum": $75/u/m                                                            | REST + Webhooks https://developers.pipedrive.com/docs/api/v1/                 | Kanban Board                                        | Yes                                                                                         | Yes        | Yes                | Yes                                                                             | Yes                                                                             | **No**                                                                                         |
+| [Salesforce.com](https://www.salesforce.com)                | Closed             | [$25/user/month](https://www.salesforce.com/editions-pricing/platform)                | Variable/Opaque from $25 to $300/u/m!                                                                                   | REST + Stream https://developer.salesforce.com/page/Salesforce_APIs           | "Classic" ("Clunky") or "Lightning" (Drag-and-drop) | Yes                                                                                         | Yes        | Yes                | Yes                                                                             | Yes                                                                             | **Yes**                                                                                        |
+| [Streak.com](https://www.streak.com)                        | Closed             | $49/user/month                                                                        | 3 Tiers: Free, Professional ($49/user/month) & "Enterprise" ($99/user/month)                                            | REST https://streak.readme.io/                                                | Gmail Inbox                                         | Yes                                                                                         | Yes        | **No**             | **No**                                                                          | **No**                                                                          | **No**                                                                                         |
+| [SugarCRM.com](https://www.sugarcrm.com)                    | Closed             | [$40/user/month](https://www.sugarcrm.com/product/pricing-editions)                   | 3 Tiers: Professional ($40/u/m),  "Enterprise" ($65/u/m) & "Ultimate" ($150/u/m)                                        | REST http://support.sugarcrm.com/Documentation/?docVersion=8.0&docEdition=Pro | "Traditional CRM" (no kanban)                       | Yes                                                                                         | Yes        | **No**             | Yes                                                                             | Yes                                                                             | Yes                                                                                            |
 
 
-# List (Alphabetical)
 
-> Meta: should this list be Alphabetical or in order of Popularity?
-(_I get the feeling that Alphabetical will make locating an entry easier
-and thus aid maintenance ..._)
 
-<br />
+
+# Alphabetical List of CRM Systems
 
 ## Active Campaign
 
