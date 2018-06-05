@@ -20,12 +20,14 @@ Should we make this a "real" HTML table for sorting/filtering?
 
 | Product/Service Name | Open/Closed Source | Cost | Pricing Model | API | UX | Keyboard Shortcuts | Automation | Kanban / Drag+Drop | Custom Fields/Data | Custom Workflow | Telephony Integration |
 | ------------- |:-------------:| ----- | --- |:--- | --- | --- | --- | --- | --- | --- |
+| [Active Campaign](https://www.activecampaign.com/crm) | Closed | Flat [$99/month](https://www.activecampaign.com/pricing) for 2.5k contacts (25 users) | 4 Tiers: Lite: 39/mo (3 users), Plus: $99/mo (25 u), Professional: $129/mo (50 u) & "Enterprise": $229/mo (ultd. users) | REST https://www.activecampaign.com/api | Kanban | No | Yes | Yes | [Yes](https://www.activecampaign.com/api) | Yes | **No** |
 | [Agile CRM](https://getbase.com) | Closed | [$14.99/user/month](https://getbase.com/pricing) (_**$8.99/u/m** paid annually_) | 3 Tiers: Starter: $14.99/u/m, "Regular": $49.99/u/m & "Enterprise": $79.99/u/m | REST https://www.agilecrm.com/api | Kanban | [Yes](https://www.agilecrm.com/product-updates#) | Yes | Yes | [Yes](https://www.agilecrm.com/api) | Yes | [Yes](https://www.agilecrm.com/crm-telephony) |
 | [Close.io](https://close.io/) | Closed | [$65/user/month](https://close.io/pricing) | 3 Tiers: Basic: $65/u/m, "Professional": $110/u/m & Business: $165/u/m | REST https://close.io/api | "Inbox" | Yes | Yes | No | [Yes](https://close.io/api/) | No | Yes |
 | [Base CRM](https://getbase.com) | Closed | [$45/user/month](https://getbase.com/pricing) | 3 Tiers: Starter: $45/u/m, "Professional": $95/u/m & "Enterprise": $145/u/m | REST https://developers.getbase.com | "Traditional" | [Yes](https://support.getbase.com/hc/en-us/articles/204508995-Can-I-use-Keyboard-Shortcuts) | Yes | No | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No | No |
 | [Freshsales CRM](https://www.freshworks.com/freshsales-crm) | Closed | [$18/user/month](https://www.freshworks.com/freshsales-crm)| 4 Tiers: Blossom: $9/u/m, Garden: $18/u/m, "Estate": $36/u/m & "Forrest": $57/u/m | REST https://www.freshsales.io/api | "Kanban" | No | Yes | Yes | [Yes](https://www.freshworks.com/freshsales-crm/phone/) | [Yes](https://developers.getbase.com/docs/rest/articles/firehose/custom_fields) | No |
 | [Hubspot.com](https://www.hubspot.com) | Closed | [$42/user/month](https://www.hubspot.com/pricing/sales) for the _first_ user | 3 Tiers: "Free", Starter: $42 for **1 user** & "Professional": $330 for 5 users = **$66/u/m** | REST https://developers.hubspot.com/ | Kanban | [**No**](https://community.hubspot.com/t5/HubSpot-Ideas/keyboard-shortcuts/idi-p/12244) | Yes | Yes | [Yes](https://api.insight.ly/v2.2/Help#!/Overview/Technical_Details) | Yes | [Yes](https://www.hubspot.com/products/sales/click-to-call) $$! |
 | [insightly.com](https://www.insightly.com) | Closed | [$49/user/month](https://www.insightly.com/pricing) | 3 Tiers: "Plus": $29/u/m, Professional: $49/user/month & "Enterprise": $99/u/m | REST https://api.insight.ly/v2.2/Help | Kanban/Outlook Inbox | [Yes](https://support.insight.ly/hc/en-us/articles/204248780-Keyboard-shortcuts) | Yes | Yes | Yes | Yes | [**No**](https://support.insight.ly/hc/en-us/community/posts/115009496948-Insightly-Telephony) |
+| [Nimble CRM]( https://www.nimble.com) | Closed | [$19/u/m](https://www.nimble.com/pricing) | 2 Tiers: "Contact": $9/mo & "Business": $19/u/m | REST https://nimble.readthedocs.io | Kanban/Timeline | Yes | Yes | Yes | [Yes](https://www.activecampaign.com/api) | No | **No** |
 | [Pipedrive.com](https://www.pipedrive.com) | Closed | [$29/user/month](https://www.pipedrive.com/en-gb/plans) | 3 Tiers: Silver: 15/u/m, Gold: $29/u/m & "Platinum": $75/u/m | REST + Webhooks https://developers.pipedrive.com/docs/api/v1/ | Kanban Board | Yes | Yes | Yes | Yes | Yes | **No** |
 | [Salesforce.com](https://www.salesforce.com) | Closed | [$25/user/month](https://www.salesforce.com/editions-pricing/platform) | Variable/Opaque from $25 to $300/u/m! | REST + Stream https://developer.salesforce.com/page/Salesforce_APIs | "Classic" ("Clunky") or "Lightning" (Drag-and-drop) | Yes | Yes | Yes | Yes | Yes | **Yes** |
 | [Streak.com](https://www.streak.com) | Closed | $49/user/month | 3 Tiers: Free, Professional ($49/user/month) & "Enterprise" ($99/user/month) | REST https://streak.readme.io/ | Gmail Inbox | Yes | Yes | **No** | **No** | **No** | **No** |
@@ -38,6 +40,83 @@ Should we make this a "real" HTML table for sorting/filtering?
 (_I get the feeling that Alphabetical will make locating an entry easier
 and thus aid maintenance ..._)
 
+## Nimble
+
+Nimble is a "social CRM" that sources data from several _other_ platforms
+(_social networks, business communication apps & email_) to
+create a profile of the target customer allowing
+sales people to have _far_ more insight into prospects
+without needing to waste time googling before calling. https://www.nimble.com
+![nimble-crm-](https://user-images.githubusercontent.com/194400/41001105-e3dfd976-6907-11e8-8387-5f04389453e0.png)
+
+![image](https://user-images.githubusercontent.com/194400/41001068-ce5c1d8a-6907-11e8-8d60-735170578e24.png)
+
+Good overview from the CEO: https://vimeo.com/252438241
+![nimble-crm-demo](https://user-images.githubusercontent.com/194400/41001213-44d74840-6908-11e8-8612-2449bcd28e8c.png)
+
+The value proposition for Nimble CRM is _strong_ for a business where
+knowing about the prospect is essential to making the sale
+or building the relationship.
+However _all_ of our "leads" are "inbound",
+i.e. people fill in our "inquiry form" and give us _most_ of the details
+we need to make our assessment on their needs.
+We _always_ end up Googling the person/company to see what comes up.
+
+### Pricing
+
+Their pricing is competitive https://www.nimble.com/pricing
+![image](https://user-images.githubusercontent.com/194400/41003791-9db719b6-690f-11e8-89b7-23e9afcd5965.png)
+
+If our objective is to be "social focussed", this is _easily_ the best choice.
+But if we aren't reliant on "social" data, there are better options.
+
+### API
+
+The API looks "OK": https://nimble.readthedocs.io
+Not amazingly documented, but _adequate_.
+
+### Telephony Integration?
+
+While Nimble does _not_ explicitly have telephony support
+(_so there is no "dialer" built-in to the system_)
+there is a _basic_ integartion with
+call2CRM https://www.nimble.com/marketplace/call2crm
+which allows you to install an app on your phone.
+However this _appears_ to only be available in the USA.
+
+<br />
+
+## Active Campaign
+
+Active campaign is primarily focussed Email Marketing Automation,
+however their CRM offers all the "standard" features you would expect
+from a contact/sales system with a "Kanban" UI.
+https://www.activecampaign.com/crm
+![active-campaign-crm](https://user-images.githubusercontent.com/194400/41002123-c33f72fa-690a-11e8-8d0d-2f6cc2a7d644.png)
+
+### Pricing
+
+Active Campaign has _competitive_ pricing considering that they charge a "flat"
+fee for **25 users**
+however their pricing increases based on how many _contacts_ you have.
+https://www.activecampaign.com/pricing
+![active-campaign-pricing](https://user-images.githubusercontent.com/194400/41002011-764550dc-690a-11e8-8a3c-fb06dd4b74b8.png)
+
+### API
+
+https://www.activecampaign.com/api
+
+
+It is _possible_ to add custom fields, but it appears that they are not _named_
+rather a custom field is a numeric index!
+https://community.activecampaign.com/t/where-i-can-find-the-id-of-a-custom-field-for-use-with-the-api/2515/2
+https://community.activecampaign.com/t/how-to-update-a-custom-field-in-contact-with-api-v3/3603
+
+We _can_ work with this, but I feel that there are _better_ options.
+They don't have a Telephony integration; so if we need that this not an option.
+But if we are only using email and SMS, the UI looks good.
+
+<br /> <br />
 
 ## Agile CRM
 
@@ -83,6 +162,19 @@ Read more: https://customers.twilio.com
 ### Automation
 
 see: https://www.agilecrm.com/blog/4-keys-getting-inbox-control-automation
+
+### Verdict
+
+We _like_ the look of Agile CRM,
+our _only_ reservation(s) on recommending it are:
++ their underlying technology is not great; https://builtwith.com/www.agilecrm.com
++ Their website has _many_ JavaScript errors, see: https://github.com/nelsonic/nelsonic.github.io/issues/475
+which is indicative of "broken" UX.
++ Their node.js API has no tests: https://github.com/agilecrm/nodejs/blob/master/agilecrm/package.json#L7
+so it could "break" without warning which will "break" our app/site.
++ No indication of how data is stored (_encryption?_)
+
+<br />
 
 ## Base CRM
 
