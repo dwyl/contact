@@ -3,7 +3,7 @@
 
 The Open Source CRM System of your _Dreams_!
 -->
-## CRM?
+## What is CRM?
 
 ![crm-intro-image](https://user-images.githubusercontent.com/194400/41077294-c1b837ec-6a0d-11e8-98c8-459d061d1cda.png)
 
@@ -125,16 +125,22 @@ which means that only the one person who engaged in the conversation
 is aware of the full history
 thus that person becomes a "bottleneck" in the system
 or worse the "single point of failure". <br />
-  **a**. **Activity** of people editing/updating the spreadsheet is not tracked.
-  If someone sees an enquiry come in and follows up (_by email or phone_) and then
-  _forgets_ to update the relevant row/cell there can be duplicated effort.
-  **b**. **Business Process _Automation_** is non-existent it's ***all manual***.
-  For example scheduling a proposed time for a call/meeting is all manual. <br />
-  **c**. **Contacts** become "stale" over time as people change jobs, our spreadsheet
-  does not reflect this without manual update.
+  **a**. **Activity** of people editing/updating the spreadsheet
+  is not _automatically_ tracked.
+  If someone sees an enquiry come in and follows up
+  (_by email or phone_) and the _forgets_ to update
+  the relevant row/cell there can be duplicated effort. <br />
+  **b**. **Business Process _Automation_** is non-existent;
+  it's ***all manual***.
+  For example scheduling a proposed time
+  for a call/meeting is all manual. <br />
+  **c**. **Contacts** become "stale" over time as people change jobs,
+  our spreadsheet does not reflect this without manual update.
   **d** **Date Prioritisation** is very _manual_ in the spreadsheet
-  and in general _ineffective_. We don't _capture_ the urgency of the inquiry/request,
-  so we have "_missed out_" on interesting opportunities, which is frustrating!<br />
+  and in general _ineffective_. We don't _capture_
+  the urgency of the inquiry/request,
+  so we have "_missed out_" on interesting opportunities,
+  which is frustrating!<br />
 
 3. Spam! last, but not least, spam. In the last month we've had over 50 SPAM requests.
 (_in fact this is a catalyst for us wanting to re-think our enquiry process
@@ -147,20 +153,81 @@ wanting to sell us "talent" to be "Spam" and we want to eliminate it.
 
 
 We need to "fix" this!
-It's costing us time/money every day and risking personal data loss unnecessarily.
+It's costing us time/money every day
+and risking personal data loss _unnecessarily_.
 
 
 ## What?
 
+We need to be _focussed_
+on "***workflow automation***"
+to be more effective
+at handling our enquiries.
+
+### _Inbound_ Enquiries
+
+We receive several types of inbound enquiries, the list of enquiry "sources"
+in (descending) order of _frequency_ is:
+1. Web-to-Lead (_via "contact-us" web form_)
+2. Telephone (_via having our mobile phone number `public` on the website_!)
+3. Email ("_direct-to-inbox_") via word of mouth.
+4. Twitter
+5. Web-based Instant Chat - currently "Gitter", considering other options.
 
 
-+ Mobile-first for on-the-go at-your-fingertips access and real-time updates.
-+ Drag-and-drop interface on desktop
-+ Collaborative
-+ Access Controls restrict access to data for security & privacy.
-+ Anonimised data
+#### 1. Web-to-Lead "Contact-Us" Form
+
+This is where we will be spending the _bulk_ of our time for the next few weeks.
+
+
+#### 2. Telephone
+
+Our plan is to use a Twilio to handle our both our inbound and outbound voice
+calls with a telephone number people can call when they need our help.
+
+#### 3. Email
+
+At present we receive email directly to our Gmail inbox.
+This "works" for now so we don't _need_ to change it.
+But as soon as we have our "web-to-lead" process nailed,
+we will be tackling "email-to-lead" from _scratch_.
+
+#### 4. Twitter
+
+At present we don't have any "_process_" or "_workflow_" for Twitter.
+We need to have alerts for both mentions and specific topics/hashtags.
+TBD once we have "Web-to-Lead" working.
+
+
+#### 5. Web-based Instant Messaging ("Chat")
+
+> We intend to solve this by _building_ something.
+But we feel that it needs to "feed" into our "Web-to-Lead" workflow
+if none of us are online to help the person wanting to chat.
+So we will return to this once we have the first few elements working.
+
+
+
+### Outbound Communications ?
+
+We are in the _fortunate_ position that we have not _needed_
+to do any "outbound" marketing to get work.
+All of our clients have come to us
+through word of mouth or inquiry form.
+
+_However_, we are planning to begin publishing our "blog" posts
+and weekly newsletter once we are focussing on our ***SaaS Product***.
+
+We do not consider this to be "marketing",
+rather it's "sharing updates" with our community.
+
+
+
 
 ## Who?
+
+For the foreseeable future, our "internal" team of people who _already_
+handle the enquiries will be using the "CRM".
 
 ## How?
 
@@ -177,6 +244,14 @@ In addition to having encryption of all sensitive/personal data
 
 ## Requirements / Roadmap
 
+### Mobile UI for On-the-go Access
+
++ Mobile-first for on-the-go at-your-fingertips access and real-time updates.
++ Drag-and-drop interface on desktop
++ Collaborative
++ Access Controls restrict access to data for security & privacy.
++ Anonymised data
+
 ### Access Controls
 
 By default each "instance" should have
@@ -186,11 +261,10 @@ By default each "instance" should have
 + Regular "User"
 + Read-only access (_for audit and training purposes_)
 
-
-
 ### Data Ingress
 
-
+For "MVP++" we will be using a Web (HTML) form to capture data
+and store it in a Database.
 
 ### Data Export
 
@@ -204,21 +278,15 @@ By default each "instance" should have
 
 ## One-Click Start (Zero "Setup")
 
+Use "deploy to Heroku" button?
+Or "Terraform" to AWS Lambda...?
 
 
-
-
-
-
-## Keyboard Shortcuts
+## Keyboard Shortcuts in UI?
 
 While we need to make the CRM as user-friendly and intuitive as possible
 for _first-time_ and _casual_ users, it's the "_power users_" who will
 be interacting with the system _most_ and need the _fastest_ UX day-to-day.
-
-
-
-
 
 
 
@@ -230,12 +298,16 @@ be interacting with the system _most_ and need the _fastest_ UX day-to-day.
 
 ### Commercial CRM Systems
 
-
+See:
+[`market-research.md`](https://github.com/nelsonic/contact/blob/master/market-research.md)
 
 ### Open Source CRM Systems
 
+We have tried:
++ https://suitecrm.com
++ https://civicrm.org
 
-
+Both are PHP-MySQL and both get _painfully_ slow with any volume of data ...
 
 <!--
 ## Name?
